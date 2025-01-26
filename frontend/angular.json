@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Quiz-game": {
+    "Angular-quiz": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/quiz-game",
+            "outputPath": "dist/angular-quiz",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "quiz-game:build:production"
+              "buildTarget": "Angular-quiz:build:production"
             },
             "development": {
-              "buildTarget": "quiz-game:build:development"
+              "buildTarget": "Angular-quiz:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -102,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
